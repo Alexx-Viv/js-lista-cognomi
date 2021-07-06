@@ -11,7 +11,10 @@ const lowercased = surnameList.map((surnameList) => surnameList.toLowerCase());
 lowercased.sort();
 
 var listItem = document.getElementById("surname-list");
+var position = document.getElementById("position");
 
 for (var i = 0; i < lowercased.length; i++) {
   listItem.innerHTML += "<li>" + (i + 1) + " " + lowercased[i] + "</li>";
 }
+
+position.innerHTML = lowercased.indexOf(userSurname) + 1;
