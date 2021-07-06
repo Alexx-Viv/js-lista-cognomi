@@ -13,7 +13,5 @@ lowercased.sort();
 var listItem = document.getElementById("surname-list");
 
 for (var i = 0; i < lowercased.length; i++) {
-  console.log(i);
-  listItem.innerHTML += "<li>" + i + " " + lowercased[i] + "</li>";
-  console.log(listItem);
+  listItem.innerHTML += "<li>" + (i + 1) + " " + lowercased[i] + "</li>";
 }
