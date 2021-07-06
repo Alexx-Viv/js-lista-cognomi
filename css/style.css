@@ -12,5 +12,6 @@ section{
 }
 
 li{
+    list-style: none;
     text-transform: capitalize;
 }
